@@ -16,9 +16,6 @@ public class FeltSpil
         Spiller spiller1 = new Spiller(genererSpiller(1));
         Spiller spiller2 = new Spiller(genererSpiller(2));
 
-        //Spillerne skal have deres start pengebeholdning af 1000 på deres konto.
-
-
         return kørSpil(spiller1, spiller2);
     }
 
@@ -46,10 +43,26 @@ public class FeltSpil
          return "N/A spillernummer fejl";
      }
 
+
+
      // spil til vinder findes og returner denne
     public String kørSpil(Spiller et, Spiller to)
     {
-        // ...
+        //Spillerne skal have deres start pengebeholdning af 1000 på deres konto.
+        // Lauritz kører
+
+        //while loop indtil vinder findes
+
+        // terninger slåes
+        // Lauritz?
+
+
+        // De rammer et felt og deres pengebeholdning ændres
+        // Nadia starter, Lauritz hjælper senere
+
+
+        // while loop slutter og vinder returneres som string.
+
 
         return "Vinder fundet SKAL ÆNDRES";
     }
