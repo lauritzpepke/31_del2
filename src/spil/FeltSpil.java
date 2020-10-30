@@ -5,8 +5,10 @@ package spil;
  */
 public class FeltSpil
 {
-    public static void main(String[] args)
+    public String feltSpil()
     {
+        UI spilUI = new UI();
+
         String navnSpillerEt;
         String navnSpillerTo;
 
@@ -16,25 +18,23 @@ public class FeltSpil
 
 
         // Spillerne skal indskrive deres unikke navne
-        navnSpillerEt = UI.navngiv(1);
-        navnSpillerTo = UI.navngiv(2);
+        navnSpillerEt = spilUI.navngiv(1);
+        navnSpillerTo = spilUI.navngiv(2);
 
         // check om navnene er ens indtil de ikke er
         while (navnSpillerEt.equals(navnSpillerTo))
         {
-            navnSpillerTo = UI.sammeNavnFejlbesked();
+            navnSpillerTo = spilUI.sammeNavnFejlbesked();
         }
 
-
-
         // Når spillet starter skal to spillere genereres.
-        //public Spiller spillerEt = new Spiller();
+        //public Spiller spillerEt = new Spiller(navnSpillerEt);
 
         // Spillerne skal indskrive deres navne, som skal være forskellige fra hinanden
 
         //Spillerne skal have deres start pengebeholdning af 1000 på deres konto.
 
+
+        return "Vinder fundet SKAL ÆNDRES";
     }
-
-
 }
