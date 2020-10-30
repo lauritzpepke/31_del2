@@ -13,7 +13,7 @@ public class Konto {
      */
     public Konto()
     {
-        pengebeholdning = 0;
+        pengebeholdning = pengebeholdning;
     }
 
     /** Henter kontoens pengebeholdning
@@ -21,7 +21,12 @@ public class Konto {
      */
     public int getPengebeholdning()
     {
-        return pengebeholdning;
+        if(pengebeholdning < 0) {
+            return 0;
+        }
+        else {
+            return pengebeholdning;
+        }
     }
 
     /** Sætter kontoens pengebeholdning.
@@ -29,7 +34,7 @@ public class Konto {
      */
     public void setPengebeholdning(int pengebeholdning)
     {
-        this.pengebeholdning = pengebeholdning;
+            this.pengebeholdning = pengebeholdning;
     }
 
     // metode for indsæt beløb
@@ -41,9 +46,5 @@ public class Konto {
     public void hævBeløb(int beløb) {
         pengebeholdning = pengebeholdning - beløb;
     }
-
-
-
-
 
 }
