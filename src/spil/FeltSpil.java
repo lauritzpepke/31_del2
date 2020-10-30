@@ -53,16 +53,13 @@ public class FeltSpil
     {
         int terningVærdi = 1;
         //Spillerne skal have deres start pengebeholdning af 1000 på deres konto.
-        // Lauritz kører
 
         //while loop indtil vinder findes
 
         // terninger slåes
-        // Lauritz?
 
 
         // De rammer et felt og deres pengebeholdning ændres
-        // Nadia starter, Lauritz hjælper senere
         String effekt = ramFelt(terningVærdi);
 
 
