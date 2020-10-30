@@ -3,16 +3,17 @@ package spil;
 /**
  * Repræsenterer konto for spillernes pengebeholdning i spillet.
  */
-public class Konto
-{
+public class Konto {
+
     private int pengebeholdning;
+
 
     /** Laver en konto med pengebeholdning
      * @param pengebeholdning Kontoens pengebeholdning
      */
-    public Konto(int pengebeholdning)
+    public Konto()
     {
-        this.pengebeholdning = pengebeholdning;
+        pengebeholdning = 0;
     }
 
     /** Henter kontoens pengebeholdning
@@ -30,4 +31,19 @@ public class Konto
     {
         this.pengebeholdning = pengebeholdning;
     }
+
+    // metode for indsæt beløb
+    public void indsætBeløb(int beløb) {
+        pengebeholdning = pengebeholdning + beløb;
+    }
+
+    // metode for hæv beløb
+    public void hævBeløb(int beløb) {
+        pengebeholdning = pengebeholdning - beløb;
+    }
+
+
+
+
+
 }
