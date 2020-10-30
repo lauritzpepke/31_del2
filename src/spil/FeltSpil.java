@@ -19,13 +19,12 @@ public class FeltSpil
         navnSpillerEt = UI.navngiv(1);
         navnSpillerTo = UI.navngiv(2);
 
-        /* madpause HER
-        // check om navnene er ens:
-        if (navnSpillerEt == navnSpillerTo)
+        // check om navnene er ens indtil de ikke er
+        while (navnSpillerEt.equals(navnSpillerTo))
         {
-            UI.sasammeNavnFejlbesked
+            navnSpillerTo = UI.sammeNavnFejlbesked();
         }
-        */
+
 
 
         // Når spillet starter skal to spillere genereres.

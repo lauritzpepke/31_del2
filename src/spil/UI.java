@@ -21,14 +21,12 @@ public class UI
         return input.next();
     }
 
-    /* madpause HER
-    static String sammeNavnFejlbesked(String navn1, String navn2)
-
+    /** Fejlbesked samt kald af navngiv metoden ved ens navne
+     * @return En strengværdi med det valgte navn
+     */
+    static String sammeNavnFejlbesked()
     {
-        System.out.println();
+        System.out.println("Spiller 2 må ikke have samme navn som spiller 1");
+        return navngiv(2);
     }
-    */
-
-
-
 }
