@@ -16,7 +16,9 @@ public class FeltSpil
         Spiller spiller1 = new Spiller(genererSpiller(1));
         Spiller spiller2 = new Spiller(genererSpiller(2));
 
-        return kørSpil(spiller1, spiller2);
+        // return kørSpil(spiller1, spiller2);
+        // vi kan ikke nå resten, så returnerer ingenting.
+        return "";
     }
 
     // UC1 Spillet kan kunne initiere et nyt spil terningspil
@@ -40,14 +42,16 @@ public class FeltSpil
              return navnSpillerTo;
          }
          //den skal ikke nå hertil.
-         return "N/A spillernummer fejl";
+         return "N/A fejl i spillernummer";
      }
 
 
 
+     /*
      // spil til vinder findes og returner denne
     public String kørSpil(Spiller et, Spiller to)
     {
+        int terningVærdi = 1;
         //Spillerne skal have deres start pengebeholdning af 1000 på deres konto.
         // Lauritz kører
 
@@ -59,6 +63,7 @@ public class FeltSpil
 
         // De rammer et felt og deres pengebeholdning ændres
         // Nadia starter, Lauritz hjælper senere
+        String effekt = ramFelt(terningVærdi);
 
 
         // while loop slutter og vinder returneres som string.
@@ -66,4 +71,11 @@ public class FeltSpil
 
         return "Vinder fundet SKAL ÆNDRES";
     }
+
+    public String ramFelt(int feltNummer)
+    {
+
+        return effekt;
+    }
+    */
 }
