@@ -13,7 +13,7 @@ public class Felt
     private String effekt;
     private int nummer;
 
-    /** Lavet er felt med det specificerede navn, effekt og nummer.
+    /** Laver et felt med det specificerede navn, effekt og nummer.
      * @param navn Feltets navn.
      * @param effekt Feltets effekt.
      * @param nummer Feltets nummer på brættet.
@@ -71,5 +71,19 @@ public class Felt
     public void setNummer(int nummer)
     {
         this.nummer = nummer;
+    }
+
+    /** En tekstrepræsentation af objektets data
+     * @return En streng repræsentation af objektets data
+     */
+
+    @Override
+    public String toString()
+    {
+        return "Felt{" +
+                "navn='" + navn + '\'' +
+                ", effekt='" + effekt + '\'' +
+                ", nummer=" + nummer +
+                '}';
     }
 }
