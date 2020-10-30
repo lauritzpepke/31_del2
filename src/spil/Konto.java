@@ -22,11 +22,9 @@ public class Konto {
     public int getPengebeholdning()
     {
         if(pengebeholdning < 0) {
-            return 0;
+            pengebeholdning = 0;
         }
-        else {
             return pengebeholdning;
-        }
     }
 
     /** Sætter kontoens pengebeholdning.
